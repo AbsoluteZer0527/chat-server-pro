@@ -18,7 +18,8 @@ public class HandlerTests {
     // NOTE: %20 is the way to put a space in the parameters of a URL
     String url = "http://localhost:4000/chat?user=edwin&message=happy%20friday!";
     URI input = new URI(url);
-    String expected = "edwin: happy friday!\n\n";
+    String expected = "edwin: happy friday
+	    !!!!!\n\n";
     assertEquals(expected, h.handleRequest(input));
   }
 
